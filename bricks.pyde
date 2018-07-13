@@ -1,4 +1,4 @@
-xCoordinate = random(20, 480)
+xCoordinate = random(20, 380)
 speedx = 6
 speedy = 5
 yCoordinate = 50
@@ -90,6 +90,15 @@ def draw():
                 rect(0, 0, 400, 500)
                 fill(255)
                 text("GAME OVER", 167, 240)
+                text("YOU WIN!!", 173, 255)
+                
+    elif yCoordinate >= 490:
+        fill(0)
+        rect(0, 0, 400, 500)
+        fill(255)
+        text("GAME OVER", 167, 240)
+        text("YOU LOSE", 173, 255)
+        
     
     fill( 246, 31, 9)
     rect(mouseX - paddleSize/2 , 460, paddleSize, 20)
